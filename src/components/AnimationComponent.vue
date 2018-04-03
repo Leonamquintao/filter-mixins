@@ -38,7 +38,6 @@
         show: false,
         showSlide: false,
         showSuccess: false,
-        filterText: ''
       }
     }
 

@@ -20,6 +20,8 @@
       </ul>
 
       <animation-component></animation-component>
+      <hr>
+      <animated-list-component></animated-list-component>
 
     </div>
 
@@ -29,16 +31,19 @@
 <script>
 
   import AnimationComponent from './AnimationComponent.vue';
+  import AnimatedListComponent from './AnimatedListComponent.vue';
 
   export default {
     components: {
-      AnimationComponent: AnimationComponent
+      AnimationComponent: AnimationComponent,
+      AnimatedListComponent: AnimatedListComponent
     },
     data () {
       return {
         text: 'this is a awesome day!',
         msg: 'BUT UNFORTUNATELY IS ENDING!',
         qualities: ['hot', 'cold', 'dark', 'clear', 'warm', 'cloudy'],
+        filterText: ''
       }
     },
     filters: {
